@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Education</h1>
+
+    <section *ngFor="let education of educationList">
+        <h1>{{education.institude}}</h1>
+        <h2>Duration: {{education.duration}}</h2>
+        <h3>Average: {{education.average}}</h3>
+        <h4>{{education.score}}</h4>
+    </section>
+</div>
