@@ -39,27 +39,58 @@
     padding: 10px 0;
     font-weight: bold;
     text-shadow: 10px 8px 10px var(--black);
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.name span:nth-of-type(3) {
+    padding-left: 15px;
+    letter-spacing: 1px;
 }
 
 .profile {
     width: 400px;
-    height: 400px;
+    height: 470px;
     grid-row: 2/3;
     margin: 0 auto;
     position: relative;
-    clip-path: inset(0 round 0 0 25%);
+    opacity: 0.9;
+    clip-path: inset(5% round  0 25%);
     padding-top: 40px;
 }
 
-.profile .profile-bg {
-    height: 75%;
-    width: 100%;
-    bottom: 0%;
+.overlay {
     position: absolute;
-    background-color: #eff6e0;
-    clip-path: inset(0 round 50% 0 0);
-    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #124559;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+.profile:hover .overlay{
+    height: 100%;
+}
+
+.text {
+    white-space: nowrap; 
+    color: #eff6e0;
+    font-size: 40px;
+    position: absolute;
+    overflow: hidden;
+    font-family: "Oswald", "sans-serif";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-shadow: 10px 8px 10px var(--black);
+}
+
+.text h5{
+    padding-left: 40px;
+    padding-top: 15px;
 }
 
 .profile img {
