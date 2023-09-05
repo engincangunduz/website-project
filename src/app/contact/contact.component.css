@@ -17,7 +17,7 @@ ul {
     justify-content: space-around;
 }
 
-.social-media li {
+.social-media a {
     height: 60px;
     width: 60px;
     display: flex;
@@ -29,7 +29,7 @@ ul {
 }
 
 .contact-info li {
-    height: 30px;
+    height: 35px;
     font-size: 1.2rem;
 }
 
